@@ -2,6 +2,11 @@ import React from 'react'
 import Navbar from '../components/Navbar'
 import Hero from '../components/Hero'
 import Footer from '../components/Footer'
+import TrustedBy from '../components/TrustedBy'
+import FeaturesSection from '../components/Features'
+import HowItWorks from '../components/HowWorks'
+import FAQSection from '../components/Faqs'
+import CTASection from '../components/Cta'
 
 function App() {
   return (
@@ -9,10 +14,11 @@ function App() {
       <Navbar />
       <main>
         <Hero />
-        <section className="p-8 text-center">
-          <h2 className="text-2xl font-bold">Starter Template</h2>
-          <p className="mt-2 text-gray-400">Begin building your landing page here.</p>
-        </section>
+        <TrustedBy/>
+        <FeaturesSection/>
+        <HowItWorks/>
+        <FAQSection/>
+        <CTASection/>
       </main>
       <Footer />
     </div>
