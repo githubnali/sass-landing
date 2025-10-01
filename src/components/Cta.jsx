@@ -2,17 +2,17 @@ import React from "react";
 
 const CTASection = () => {
   return (
-    <section className="py-20 px-4 md:px-8 bg-gradient-to-r from-blue-600 to-indigo-600 dark:from-blue-700 dark:to-indigo-900 text-white rounded-lg mx-4 md:mx-8 my-16">
-      <div className="max-w-4xl mx-auto text-center">
-        <h2 className="text-4xl md:text-5xl font-bold mb-4">
+    <section className="py-20 px-4 md:px-8 bg-gradient-to-r from-[#00CC84] to-[#009966] text-white rounded-xl md: my-16 shadow-lg max-w-5xl mx-auto">
+      <div className="text-center">
+        <h2 className="text-4xl md:text-5xl font-extrabold mb-4 font-Inter">
           Start Your Free Trial Today!
         </h2>
         <p className="text-lg md:text-xl mb-8">
-          Experience the power of our SaaS solution and take your business to the next level.
+          Experience the power of our SaaS solution and elevate your business effortlessly.
         </p>
         <a
           href="#"
-          className="inline-block bg-white text-blue-600 dark:text-blue-800 font-semibold px-6 py-3 rounded-lg text-lg hover:bg-gray-100 transition"
+          className="inline-block bg-[#00CC84] text-white font-semibold px-8 py-4 rounded-lg text-lg hover:bg-[#009966] transition"
         >
           Get Started
         </a>

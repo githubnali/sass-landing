@@ -16,7 +16,18 @@ const faqData = [
     question: "Do you offer customer support?",
     answer:
       "Yes, we provide 24/7 customer support via chat, email, and phone to help you at every step."
-  }
+  },
+    {
+    question: "Do you offer customer support?",
+    answer:
+      "Yes, we provide 24/7 customer support via chat, email, and phone to help you at every step."
+  },
+    {
+    question: "Do you offer customer support?",
+    answer:
+      "Yes, we provide 24/7 customer support via chat, email, and phone to help you at every step."
+  },
+  
 ];
 
 // FAQ Item Component
@@ -31,7 +42,7 @@ const FAQItem = ({ faq, index, openIndex, setOpenIndex }) => {
     >
       <div className="flex justify-between items-center">
         <h3 className="font-semibold text-lg">{faq.question}</h3>
-        <span className="text-2xl font-bold">{isOpen ? "-" : "+"}</span>
+        <span className="text-3xl font-bold">{isOpen ? "-" : "+"}</span>
       </div>
       {isOpen && <p className="mt-2 text-gray-700 dark:text-gray-300">{faq.answer}</p>}
     </div>
