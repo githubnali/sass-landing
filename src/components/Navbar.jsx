@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from "react";
 import { Moon, Sun, Menu, X } from "lucide-react"; // Added Menu & X for mobile toggle
 import { useModal } from "../context/ModalContext";
+import { Link } from "react-scroll";
 
 const Navbar = () => {
   const [theme, setTheme] = useState("light");
@@ -31,10 +32,17 @@ const Navbar = () => {
     setMenuOpen(!menuOpen);
   };
 
+  const scrollProps = {
+    smooth: true,
+    duration: 1200,
+    offset: -100, // adjust if you have a sticky header
+    className: "hover:text-[#00FF84] cursor-pointer",
+  };
+
   return (
     <header
-      className={`sticky top-0 z-50 w-full flex justify-center px-6 py-8 
-        bg-white/80 dark:bg-gray-900/80 backdrop-blur-md shadow-sm
+      className={`sticky top-0 z-50 w-full flex justify-center px-6 py-8 pb-0
+        bg-white/80 dark:bg-gray-900/80 backdrop-blur-md
         transition-transform duration-700 ease-out
         ${animate ? "translate-y-0 opacity-100" : "-translate-y-10 opacity-0"}
       `}
@@ -48,11 +56,11 @@ const Navbar = () => {
 
         {/* Desktop Nav Links */}
         <ul className="hidden md:flex space-x-8 text-gray-700 dark:text-gray-300 font-medium">
-          <li><a href="#features" className="hover:text-[#00FF84]">Features</a></li>
-          <li><a href="#how-it-works" className="hover:text-[#00FF84]">How it Works</a></li>
-          <li><a href="#pricing" className="hover:text-[#00FF84]">Pricing</a></li>
-          <li><a href="#reviews" className="hover:text-[#00FF84]">Reviews</a></li>
-          <li><a href="#faqs" className="hover:text-[#00FF84]">FAQs</a></li>
+          <li><Link to="features" {...scrollProps} className="hover:text-[#00FF84] cursor-pointer">Features</Link></li>
+          <li><Link to="how-it-works" {...scrollProps} className="hover:text-[#00FF84] cursor-pointer">How it Works</Link></li>
+          <li><Link to="pricing" {...scrollProps} className="hover:text-[#00FF84] cursor-pointer">Pricing</Link></li>
+          <li><Link to="reviews" {...scrollProps} className="hover:text-[#00FF84] cursor-pointer">Reviews</Link></li>
+          <li><Link to="faqs" {...scrollProps} className="hover:text-[#00FF84] cursor-pointer">FAQs</Link></li>
         </ul>
 
         {/* Right side */}

@@ -85,10 +85,10 @@ const renderStars = (count) => {
 
 const TestimonialsSection = () => {
   return (
-    <section className="py-16 px-4 md:px-8 bg-gray-50 dark:bg-gray-900">
+    <section className="py-16 px-4 md:px-8 bg-gray-50 dark:bg-gray-900" id="reviews">
       {/* Heading */}
       <div className="text-center mb-12">
-        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white">
+        <h2 className="font-poppins text-3xl md:text-4xl font-bold text-gray-900 dark:text-white">
           What Our Customers Say
         </h2>
         <p className="text-gray-600 dark:text-gray-400 mt-2">
@@ -102,7 +102,7 @@ const TestimonialsSection = () => {
           {testimonials.map((t, index) => (
             <div
               key={index}
-              className="min-w-[300px] max-w-[320px] bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl p-6 shadow-sm flex-shrink-0"
+              className="min-w-[300px] max-w-[320px] bg-white dark:bg-gray-800 border border-[#00FF84] rounded-xl p-6 shadow-sm flex-shrink-0"
             >
               {/* Profile */}
               <div className="flex items-center mb-4">

@@ -95,7 +95,7 @@ const Modal = () => {
           ✕
         </button>
 
-        <h2 className="text-2xl font-bold mb-4 text-center">Contact Us</h2>
+        <h2 className="font-poppins text-2xl font-bold mb-4 text-center">Contact Us</h2>
 
         <form onSubmit={handleSubmit} className="space-y-4">
           {/* First + Last Name */}
@@ -171,19 +171,11 @@ const Modal = () => {
           {/* Submit */}
           <button
             type="submit"
-            className="w-full bg-blue-600 text-white font-semibold py-2 rounded-lg hover:bg-blue-700 transition"
+            className="w-full bg-[#00FF84] text-black font-semibold py-2 rounded-lg transition"
           >
             Submit
           </button>
         </form>
-        {/* <div className="flex justify-end border-t border-gray-300 mt-6 dark:border-gray-700 px-6 py-3">
-          <button
-            onClick={closeModal}
-            className="px-4 py-2 bg-gray-200 hover:bg-gray-300 dark:bg-gray-700 dark:hover:bg-gray-600 rounded-lg text-sm font-medium"
-          >
-            Close
-          </button>
-        </div> */}
       </div>
     </div>
   );

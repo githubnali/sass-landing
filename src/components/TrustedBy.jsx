@@ -16,8 +16,8 @@ const companies = [
 
 export default function TrustedBy() {
   return (
-    <section className="py-12 dark:bg-gray-900 max-w-5xl mx-auto">
-      <h2 className="text-center text-lg font-semibold text-gray-600 dark:text-gray-300 mb-6">
+    <section className="py-12 dark:bg-gray-900 max-w-6xl mx-auto">
+      <h2 className="text-center text-lg font-semibold text-gray-600 dark:text-gray-300 mb-6 font-poppins">
         Trusted by leading companies
       </h2>
 
