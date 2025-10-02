@@ -8,7 +8,7 @@ const Footer = () => {
   const scrollProps = {
     smooth: true,
     duration: 1200,
-    offset: -100, // adjust if you have a sticky header
+    offset: -100,
     className: "hover:text-[#00FF84] cursor-pointer",
   };
 
@@ -155,7 +155,7 @@ const Footer = () => {
           <FaYoutube />
         </a>
       </div>
-    </div>
+      </div>
     </footer>
   );
 };

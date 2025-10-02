@@ -78,7 +78,7 @@ const PricingSection = () => {
               onClick={() => setActivePlan(index)}
               className={`rounded-xl border-2 p-8 flex flex-col justify-between cursor-pointer transition-transform duration-300 ${
                 isActive
-                  ? "border-[#00FF84] bg-white dark:bg-gray-800 scale-110 shadow-xl"
+                  ? "border-[#00FF84] bg-white dark:bg-gray-800 scale-110 shadow-xl m-5 md:m-0"
                   : "border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800"
               }`}
             >

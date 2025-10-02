@@ -42,7 +42,7 @@ const Hero = () => {
           animate={{ y: 0, opacity: 1, filter: "blur(0px)" }}
           transition={{ duration: 1, ease: "easeOut" }}
           className="text-4xl md:text-6xl font-extrabold mb-6 
-              bg-gradient-to-r from-[#000000] to-[#00FF84] dark:from-[#FFFFFF] dark:to-[#00FF84] 
+              bg-gradient-to-r from-gray-900 to-[#00FF84] dark:from-gray-100 dark:to-[#00FF84] 
               bg-clip-text text-transparent drop-shadow-lg leading-normal md:leading-snug font-poppins"
           >          
           Connect Contractors & Vendors Seamlessly

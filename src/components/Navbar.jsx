@@ -55,12 +55,12 @@ const Navbar = () => {
         </div>
 
         {/* Desktop Nav Links */}
-        <ul className="hidden md:flex space-x-8 text-gray-700 dark:text-gray-300 font-medium">
-          <li><Link to="features" {...scrollProps} className="hover:text-[#00FF84] cursor-pointer">Features</Link></li>
-          <li><Link to="how-it-works" {...scrollProps} className="hover:text-[#00FF84] cursor-pointer">How it Works</Link></li>
-          <li><Link to="pricing" {...scrollProps} className="hover:text-[#00FF84] cursor-pointer">Pricing</Link></li>
-          <li><Link to="reviews" {...scrollProps} className="hover:text-[#00FF84] cursor-pointer">Reviews</Link></li>
-          <li><Link to="faqs" {...scrollProps} className="hover:text-[#00FF84] cursor-pointer">FAQs</Link></li>
+        <ul className="hidden lg:flex space-x-8 text-gray-700 dark:text-gray-300 font-medium">
+          <li><Link to="features" {...scrollProps}>Features</Link></li>
+          <li><Link to="how-it-works" {...scrollProps}>How it Works</Link></li>
+          <li><Link to="pricing" {...scrollProps}>Pricing</Link></li>
+          <li><Link to="reviews" {...scrollProps}>Reviews</Link></li>
+          <li><Link to="faqs" {...scrollProps}>FAQs</Link></li>
         </ul>
 
         {/* Right side */}
@@ -77,14 +77,14 @@ const Navbar = () => {
           {/* Get Started Button */}
           <a
             onClick={openModal}
-            className="hidden md:inline px-4 py-2 bg-[#00FF84] text-black dark:text-gray-900 font-semibold rounded-md hover:bg-[#00E676] transition cursor-pointer"
+            className="hidden lg:inline px-4 py-2 bg-[#00FF84] text-black dark:text-gray-900 font-semibold rounded-md hover:bg-[#00E676] transition cursor-pointer"
           >
             Get Started
           </a>
 
           {/* Mobile Hamburger Menu */}
           <button
-            className="md:hidden p-2 rounded-md text-gray-800 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800 transition"
+            className="lg:hidden p-2 rounded-md text-gray-800 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800 transition"
             onClick={toggleMenu}
             aria-label="Toggle Menu"
           >
@@ -95,12 +95,13 @@ const Navbar = () => {
 
       {/* Mobile Dropdown Menu */}
       {menuOpen && (
-        <div className="absolute top-full left-0 w-full bg-white dark:bg-gray-900 shadow-md border-t border-gray-200 dark:border-gray-700 md:hidden">
+        <div className="absolute top-full left-0 w-full bg-white dark:bg-gray-900 shadow-md border border-gray-200 dark:border-gray-700 lg:hidden mt-3">
           <ul className="flex flex-col space-y-4 px-6 py-6 text-gray-700 dark:text-gray-300 font-medium">
-            <li><a href="#features" className="hover:text-[#00FF84]">Features</a></li>
-            <li><a href="#how-it-works" className="hover:text-[#00FF84]">How it Works</a></li>
-            <li><a href="#reviews" className="hover:text-[#00FF84]">Reviews</a></li>
-            <li><a href="#faqs" className="hover:text-[#00FF84]">FAQs</a></li>
+            <li><Link to="features" {...scrollProps}>Features</Link></li>
+            <li><Link to="how-it-works" {...scrollProps}>How it Works</Link></li>
+            <li><Link to="pricing" {...scrollProps}>Pricing</Link></li>
+            <li><Link to="reviews" {...scrollProps}>Reviews</Link></li>
+            <li><Link to="faqs" {...scrollProps}>FAQs</Link></li>
             <li>
               <a
                 className="block px-4 py-2 bg-[#00FF84] text-black dark:text-gray-900 font-semibold rounded-md hover:bg-[#00E676] transition"
