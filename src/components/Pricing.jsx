@@ -57,7 +57,7 @@ const PricingSection = () => {
   const [activePlan, setActivePlan] = useState(1);
 
   return (
-    <section className="py-20 px-4 md:px-8 bg-gray-100 dark:bg-gray-900" id="pricing">
+    <section className="py-20 px-4 md:px-8 bg-white dark:bg-gray-900" id="pricing">
       {/* Section Heading */}
       <div className="text-center mb-12">
         <h2 className="font-poppins text-3xl md:text-4xl font-bold text-gray-900 dark:text-white">
@@ -69,7 +69,7 @@ const PricingSection = () => {
       </div>
 
       {/* Pricing Cards */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
         {plans.map((plan, index) => {
           const isActive = activePlan === index;
           return (

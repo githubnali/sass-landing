@@ -56,7 +56,7 @@ const Hero = () => {
           className="text-lg md:text-xl text-gray-800 dark:text-gray-300 max-w-2xl mx-auto mb-10"
         >
           Get instant quotations, streamline projects, and grow your business
-          with our all-in-one SaaS platform.
+          with our all-in-one SaaS platform
         </motion.p>
 
         {/* CTA buttons */}

@@ -53,17 +53,17 @@ const FAQSection = () => {
   const [openIndex, setOpenIndex] = useState(null);
 
   return (
-    <section className="py-16 px-4 md:px-8 bg-gray-100 dark:bg-gray-900" id="faqs">
-      <div className="max-w-4xl mx-auto text-center mb-12">
+    <section className="py-16 px-4 md:px-8 bg-white dark:bg-gray-900" id="faqs">
+      <div className="max-w-5xl mx-auto text-center mb-12">
         <h2 className="font-poppins text-3xl md:text-4xl font-bold text-gray-900 dark:text-white">
           Frequently Asked Questions
         </h2>
         <p className="text-gray-600 dark:text-gray-400 mt-2">
-          Find answers to common questions about our SaaS product.
+          Find answers to common questions about our SaaS product
         </p>
       </div>
 
-      <div className="max-w-3xl mx-auto">
+      <div className="max-w-5xl mx-auto">
         {faqData.map((faq, index) => (
           <FAQItem
             key={index}

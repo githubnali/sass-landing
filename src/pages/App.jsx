@@ -11,6 +11,7 @@ import PricingSection from '../components/Pricing'
 import TestimonialsSection from '../components/Tesimonial'
 import Modal from '../components/Modal'
 import ScrollToTopButton from '../components/ScrollTop'
+import ComplianceSection from '../components/Compliance'
 
 
 import "@fontsource/inter/400.css";
@@ -33,6 +34,7 @@ function App() {
         <TrustedBy/>
         <FeaturesSection/>
         <HowItWorks/>
+        <ComplianceSection/>
         <PricingSection/>
         <TestimonialsSection/>
         <FAQSection/>

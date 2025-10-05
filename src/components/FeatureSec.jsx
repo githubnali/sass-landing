@@ -63,7 +63,15 @@ const features = [
 
 const FeaturesSection = () => {
   return (
-    <section className="bg-gray-100 dark:bg-gray-900" id="features">
+    <section className="bg-gray-100 dark:bg-gray-900
+      bg-gradient-to-b
+      from-[rgba(0,255,132,0.04)]
+      via-[rgba(0,255,132,0.02)]
+      to-[rgba(0,255,132,0.04)]
+      dark:from-transparent dark:to-transparent
+      " 
+    
+      id="features">
         <div className="max-w-6xl mx-auto px-4 py-12" id="features">
         <h2 className="font-poppins text-3xl md:text-4xl font-extrabold text-center mb-12 dark:text-white">
             Why Choose Us

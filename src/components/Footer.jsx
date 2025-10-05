@@ -14,7 +14,7 @@ const Footer = () => {
 
 
   return (
-    <footer className="bg-gray-100 dark:bg-gray-900 py-12 px-6 md:px-8 border-t-2 border-gray-300 dark:border-gray-700">
+    <footer className="bg-gray-100 dark:bg-gray-900 py-12 px-6 md:px-8 dark:border-gray-700">
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row md:justify-between gap-10">
         
         {/* Left Column (40%) */}

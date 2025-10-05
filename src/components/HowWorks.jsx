@@ -24,7 +24,8 @@ const howItWorksData = [
 
 const HowItWorks = () => {
   return (
-    <section className="dark:bg-gray-900 text-white py-16 px-4 md:px-8 max-w-6xl mx-auto" id="how-it-works">
+    <section 
+      className="dark:bg-gray-900 text-white py-16 px-4 md:px-8 max-w-6xl mx-auto" id="how-it-works">
       {/* Section Heading */}
       <div className="text-center mb-12">
         <h2 className="font-poppins text-3xl md:text-4xl font-bold text-gray-900 dark:text-white">How It Works</h2>
