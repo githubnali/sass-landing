@@ -44,6 +44,12 @@ const Navbar = () => {
       className={`sticky top-0 z-50 w-full flex justify-center px-6 py-8 pb-0
         bg-white/80 dark:bg-gray-900/80 backdrop-blur-md
         transition-transform duration-700 ease-out
+        bg-gradient-to-b
+        from-[rgba(0,255,132,0.04)]
+        via-[rgba(0,255,132,0.02)]
+        to-[rgba(0,255,132,0.04)]
+        dark:from-transparent dark:to-transparent
+
         ${animate ? "translate-y-0 opacity-100" : "-translate-y-10 opacity-0"}
       `}
     >
@@ -66,13 +72,13 @@ const Navbar = () => {
         {/* Right side */}
         <div className="flex items-center space-x-4">
           {/* Theme Toggle */}
-          <button
+          {/* <button
             onClick={toggleTheme}
             className="p-2 rounded-md border border-gray-300 dark:border-gray-600 hover:bg-gray-100 dark:hover:bg-gray-800 transition"
             aria-label="Toggle Theme"
           >
             {theme === "dark" ? <Sun size={18} /> : <Moon size={18} />}
-          </button>
+          </button> */}
 
           {/* Get Started Button */}
           <a

@@ -90,7 +90,7 @@ const Footer = () => {
             <div className="flex items-center gap-3 mb-4">
               <FaPhone className="text-[#00FF84] text-xl" />
               <a href="tel:+910000000000" className="text-gray-800 dark:text-gray-200">
-                +91 00000 00000
+                +1 00000 00000
               </a>
             </div>
 
@@ -98,7 +98,7 @@ const Footer = () => {
             <div className="flex items-start gap-3 mb-4">
               <FaGlobeAsia className="text-[#00FF84] text-xl" />
               <span className="text-gray-800 dark:text-gray-200">
-                Chennai Tamil Nadu, India
+                California, USA
               </span>
             </div>
           </div>

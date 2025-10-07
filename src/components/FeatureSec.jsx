@@ -3,175 +3,166 @@ import { motion } from "framer-motion";
 
 const features = [
   {
-    title: "Fast Performance",
-    image: "https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=600",
+    title: "Everything in One Dashboard",
+    image:
+      "https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=600",
     description:
-      "Our app is lightning fast and optimized for all devices. Experience seamless performance even under heavy loads.",
-    list: [
-      "Optimized rendering for instant feedback",
-      "Minimal load times for all actions",
-      "Seamless performance under heavy loads"
-    ]
+      "See appointments, patients updates and key stats—all in one clean view.",
   },
   {
-    title: "Secure Data",
-    image: "https://images.pexels.com/photos/270360/pexels-photo-270360.jpeg?auto=compress&cs=tinysrgb&w=600",
+    title: "All Records in One Place",
+    image:
+      "https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=600",
     description:
-      "We protect your sensitive data with top-tier encryption, secure authentication, and compliance with industry standards.",
-    list: [
-      "End-to-end encryption",
-      "Secure authentication",
-      "Compliance with GDPR and HIPAA"
-    ]
+      "Store and access prescriptions, reports, and patient notes instantly.",
   },
   {
-    title: "24/7 Support",
-    image: "https://images.pexels.com/photos/3184463/pexels-photo-3184463.jpeg?auto=compress&cs=tinysrgb&w=600",
+    title: "Easy Scheduling",
+    image:
+      "https://images.pexels.com/photos/3184463/pexels-photo-3184463.jpeg?auto=compress&cs=tinysrgb&w=600",
     description:
-      "Our support team is available around the clock via chat, email, and phone to ensure smooth operations.",
-    list: [
-      "Live chat, email, and phone support",
-      "Assistance for technical and business issues",
-      "Quick response time"
-    ]
+      "Book, edit or cancel appointments in just a few clicks with a clear calendar view.",
   },
   {
-    title: "Customizable",
-    image: "https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=600",
+    title: "Safe and Private",
+    image:
+      "https://images.pexels.com/photos/270360/pexels-photo-270360.jpeg?auto=compress&cs=tinysrgb&w=600",
     description:
-      "Tailor every feature, layout, and setting to match your business needs for a fully personalized experience.",
-    list: [
-      "Branding options",
-      "Workflow adjustments",
-      "Fully personalized user experience"
-    ]
-  },
-  {
-    title: "Analytics & Insights",
-    image: "https://images.pexels.com/photos/669615/pexels-photo-669615.jpeg?auto=compress&cs=tinysrgb&w=600",
-    description:
-      "Gain deep insights into user behavior with detailed analytics dashboards to optimize strategy and growth.",
-    list: [
-      "Track user engagement in real-time",
-      "Monitor conversion rates and trends",
-      "Generate custom reports for key metrics",
-      "Identify opportunities for growth and optimization",
-      "Export data for offline analysis"
-    ]
+      "Your clinic’s data is encrypted and secure, following healthcare privacy standards.",
   },
 ];
 
 const FeaturesSection = () => {
   return (
-    <section className="bg-gray-100 dark:bg-gray-900
-      bg-gradient-to-b
-      from-[rgba(0,255,132,0.04)]
-      via-[rgba(0,255,132,0.02)]
-      to-[rgba(0,255,132,0.04)]
-      dark:from-transparent dark:to-transparent
-      " 
-    
-      id="features">
-        <div className="max-w-6xl mx-auto px-4 py-12" id="features">
-        <h2 className="font-poppins text-3xl md:text-4xl font-extrabold text-center mb-12 dark:text-white">
-            Why Choose Us
+    <section className="bg-gray-100 py-16" id="features">
+      <div className="max-w-6xl mx-auto px-6">
+        <h2 className="font-poppins text-3xl md:text-4xl font-bold text-gray-900 dark:text-white text-center">
+          Why Choose Us
         </h2>
 
-        <div className="flex flex-col lg:flex-row gap-6">
-            {/* Left Column */}
-            <div className="lg:w-3/10 flex flex-col gap-6 h-full">
-            {features.slice(0,2).map((feature, index) => (
-                <motion.div
-                key={index}
-                className={`bg-white dark:bg-gray-800 rounded-xl p-4 shadow-md ${index === 0 ? 'flex-1' : 'flex-[2.3]'}`}
-                initial={{ opacity: 0, y: 50 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                >
-                <h3 className="font-semibold text-lg mb-4 dark:text-white">{feature.title}</h3>
-                <img
-                    src={feature.image}
-                    alt={feature.title}
-                    className="w-full object-cover rounded-md mb-4 h-32 md:h-40"
-                />
-                <p className="text-gray-600 dark:text-gray-300 mb-2">{feature.description}</p>
-                <ul className="list-disc pl-5 text-gray-600 dark:text-gray-300 space-y-2">
-                    {feature.list.map((item, idx) => (
-                    <li key={idx}>{item}</li>
-                    ))}
-                </ul>
-                </motion.div>
-            ))}
+        <p class="text-gray-600 mt-2 max-w-xl mx-auto text-center dark:text-white">Built to simplify your workflow and accelerate your growth with seamless efficiency.</p>
+
+        {/* Row 1 */}
+        <div className="flex flex-col md:flex-row gap-6 mb-6">
+          {/* Card 1 - 70% */}
+          <motion.div
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="bg-white rounded-2xl shadow-sm hover:shadow-md transition flex-1 basis-[70%] overflow-hidden"
+          >
+            <div className="p-6 flex items-center justify-center h-56
+              bg-gradient-to-b
+            from-[rgba(0,255,132,0.08)]
+            via-[rgba(0,255,132,0.04)]
+            to-[rgba(0,255,132,0.08)]
+              dark:from-transparent dark:to-transparent">
+              <img
+                src={features[0].image}
+                alt={features[0].title}
+                className="h-full w-full rounded-md object-cover"
+              />
             </div>
-
-            {/* Right Column */}
-            <div className="lg:w-7/10 flex flex-col gap-6">
-            {/* Top row: 2 equal cards */}
-            <div className="flex flex-col md:flex-row gap-6">
-                {features.slice(2,4).map((feature, index) => (
-                <motion.div
-                    key={index}
-                    className="bg-white dark:bg-gray-800 rounded-xl p-4 shadow-md flex-1"
-                    initial={{ opacity: 0, y: 50 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
-                >
-                    <h3 className="font-semibold text-lg mb-4 dark:text-white">{feature.title}</h3>
-                    <img
-                    src={feature.image}
-                    alt={feature.title}
-                    className="w-full object-cover rounded-md mb-4 h-40 md:h-48"
-                    />
-                    <p className="text-gray-600 dark:text-gray-300 mb-2">{feature.description}</p>
-                    <ul className="list-disc pl-5 text-gray-600 dark:text-gray-300 space-y-2">
-                    {feature.list.map((item, idx) => (
-                        <li key={idx}>{item}</li>
-                    ))}
-                    </ul>
-                </motion.div>
-                ))}
+            <div className="p-6">
+              <h3 className="text-lg font-semibold text-gray-900 mb-3">
+                {features[0].title}
+              </h3>
+              <p className="text-gray-600 text-sm">{features[0].description}</p>
             </div>
+          </motion.div>
 
-            {/* Bottom row: 1 full-width card */}
-            <motion.div
-                className="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-md flex flex-col gap-4"
-                initial={{ opacity: 0, y: 50 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-            >
-                {/* Feature title full width */}
-                <h3 className="font-semibold text-xl md:text-2xl mb-0 dark:text-white w-full">
-                {features[4].title}
-                </h3>
-
-                {/* Image and content side by side */}
-                <div className="flex flex-col md:flex-row items-stretch gap-6">
-                {/* Left: Image */}
-                <img
-                    src={features[4].image}
-                    alt={features[4].title}
-                    className="w-full md:w-1/2 h-64 md:h-auto object-cover rounded-md flex-shrink-0"
-                />
-
-                {/* Right: Content */}
-                <div className="w-full md:w-1/2 flex flex-col justify-start">
-                    <p className="text-gray-600 dark:text-gray-300 mb-4">
-                    {features[4].description}
-                    </p>
-
-                    <ul className="list-disc pl-5 text-gray-600 dark:text-gray-300 space-y-2">
-                    {features[4].list.map((item, idx) => (
-                        <li key={idx}>{item}</li>
-                    ))}
-                    </ul>
-                </div>
-                </div>
-            </motion.div>
-
+          {/* Card 2 - 30% */}
+          <motion.div
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+            className="bg-white border border-gray-100 rounded-2xl shadow-sm hover:shadow-md transition flex-1 basis-[30%] overflow-hidden"
+          >
+            <div className="
+              p-6 flex items-center justify-center h-56
+              bg-gradient-to-b
+            from-[rgba(0,255,132,0.08)]
+            via-[rgba(0,255,132,0.04)]
+            to-[rgba(0,255,132,0.08)]
+              dark:from-transparent dark:to-transparent
+              ">
+              <img
+                src={features[1].image}
+                alt={features[1].title}
+                className="h-full w-full rounded-md object-cover"
+              />
             </div>
-        </div>
+            <div className="p-6">
+              <h3 className="text-lg font-semibold text-gray-900 mb-3">
+                {features[1].title}
+              </h3>
+              <p className="text-gray-600 text-sm">{features[1].description}</p>
+            </div>
+          </motion.div>
         </div>
 
+        {/* Row 2 */}
+        <div className="flex flex-col md:flex-row gap-6">
+          {/* Card 3 - 40% */}
+          <motion.div
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="bg-white border border-gray-100 rounded-2xl shadow-sm hover:shadow-md transition flex-1 basis-[40%] overflow-hidden"
+          >
+            <div className="
+              p-6 flex items-center justify-center h-56
+              bg-gradient-to-b
+            from-[rgba(0,255,132,0.08)]
+            via-[rgba(0,255,132,0.04)]
+            to-[rgba(0,255,132,0.08)]
+              dark:from-transparent dark:to-transparent">
+              <img
+                src={features[2].image}
+                alt={features[2].title}
+                className="h-full w-full rounded-md object-cover"
+              />
+            </div>
+            <div className="p-6">
+              <h3 className="text-lg font-semibold text-gray-900 mb-3">
+                {features[2].title}
+              </h3>
+              <p className="text-gray-600 text-sm">{features[2].description}</p>
+            </div>
+          </motion.div>
+
+          {/* Card 4 - 60% */}
+          <motion.div
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+            className="bg-white border border-gray-100 rounded-2xl shadow-sm hover:shadow-md transition flex-1 basis-[60%] overflow-hidden"
+          >
+            <div className="p-6 flex items-center justify-center h-56
+              bg-gradient-to-b
+            from-[rgba(0,255,132,0.08)]
+            via-[rgba(0,255,132,0.04)]
+            to-[rgba(0,255,132,0.08)]
+              dark:from-transparent dark:to-transparent">
+              <img
+                src={features[3].image}
+                alt={features[3].title}
+                className="h-full w-full rounded-md object-cover"
+              />
+            </div>
+            <div className="p-6">
+              <h3 className="text-lg font-semibold text-gray-900 mb-3">
+                {features[3].title}
+              </h3>
+              <p className="text-gray-600 text-sm">{features[3].description}</p>
+            </div>
+          </motion.div>
+        </div>
+      </div>
     </section>
   );
 };

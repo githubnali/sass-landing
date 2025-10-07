@@ -2,7 +2,6 @@ import React, { useEffect } from 'react'
 import Navbar from '../components/Navbar'
 import Hero from '../components/Hero'
 import Footer from '../components/Footer'
-import TrustedBy from '../components/TrustedBy'
 import FeaturesSection from '../components/FeatureSec'
 import HowItWorks from '../components/HowWorks'
 import FAQSection from '../components/Faqs'
@@ -31,7 +30,6 @@ function App() {
       <Navbar />
       <main>
         <Hero />
-        <TrustedBy/>
         <FeaturesSection/>
         <HowItWorks/>
         <ComplianceSection/>
