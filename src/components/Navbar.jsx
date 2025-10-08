@@ -36,7 +36,7 @@ const Navbar = () => {
     smooth: true,
     duration: 1200,
     offset: -100, // adjust if you have a sticky header
-    className: "hover:text-[#00FF84] cursor-pointer",
+    className: "hover:text-gray-900 cursor-pointer",
   };
 
   return (
@@ -66,6 +66,7 @@ const Navbar = () => {
           <li><Link to="how-it-works" {...scrollProps}>How it Works</Link></li>
           <li><Link to="pricing" {...scrollProps}>Pricing</Link></li>
           <li><Link to="reviews" {...scrollProps}>Reviews</Link></li>
+          <li><Link to="contact" {...scrollProps}>Contact</Link></li>
           <li><Link to="faqs" {...scrollProps}>FAQs</Link></li>
         </ul>
 
@@ -107,6 +108,7 @@ const Navbar = () => {
             <li><Link to="how-it-works" {...scrollProps}>How it Works</Link></li>
             <li><Link to="pricing" {...scrollProps}>Pricing</Link></li>
             <li><Link to="reviews" {...scrollProps}>Reviews</Link></li>
+            <li><Link to="contact" {...scrollProps}>Contact</Link></li>
             <li><Link to="faqs" {...scrollProps}>FAQs</Link></li>
             <li>
               <a

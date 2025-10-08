@@ -11,6 +11,7 @@ import TestimonialsSection from '../components/Tesimonial'
 import Modal from '../components/Modal'
 import ScrollToTopButton from '../components/ScrollTop'
 import ComplianceSection from '../components/Compliance'
+import ContactSection from '../components/ContactUs'
 
 
 import "@fontsource/inter/400.css";
@@ -35,6 +36,7 @@ function App() {
         <ComplianceSection/>
         <PricingSection/>
         <TestimonialsSection/>
+        <ContactSection/>
         <FAQSection/>
         <CTASection/>
       </main>

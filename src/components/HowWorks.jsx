@@ -46,7 +46,7 @@ const HowItWorks = () => {
             <p className="text-gray-600 mb-4 dark:text-white">{card.description}</p>
             <a
               href={card.link}
-              className="text-[#00FF84] hover:underline font-medium"
+              className="text-gray-900 hover:underline font-semibold"
             >
               Learn More
             </a>

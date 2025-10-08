@@ -60,7 +60,7 @@ const ComplianceSection = () => {
           initial={{ opacity: 0, x: 50 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6 }}
-          className="flex-1 flex justify-center md:justify-end"
+          className="flex-1 md:w-full flex justify-center md:justify-end"
         >
           <div className="bg-white dark:bg-gray-800 shadow-md rounded-xl p-6 w-72 md:w-80">
             <h3 className="text-4xl font-extrabold text-gray-900 dark:text-white mb-4">Security</h3>

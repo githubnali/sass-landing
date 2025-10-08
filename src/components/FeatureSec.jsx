@@ -40,7 +40,7 @@ const FeaturesSection = () => {
           Why Choose Us
         </h2>
 
-        <p class="text-gray-600 mt-2 max-w-xl mx-auto text-center dark:text-white">Built to simplify your workflow and accelerate your growth with seamless efficiency.</p>
+        <p class="text-gray-600 mt-2 max-w-2xl mx-auto text-center dark:text-white mb-10">Built to simplify your workflow and accelerate your growth with seamless efficiency.</p>
 
         {/* Row 1 */}
         <div className="flex flex-col md:flex-row gap-6 mb-6">
@@ -54,9 +54,9 @@ const FeaturesSection = () => {
           >
             <div className="p-6 flex items-center justify-center h-56
               bg-gradient-to-b
-            from-[rgba(0,255,132,0.08)]
-            via-[rgba(0,255,132,0.04)]
-            to-[rgba(0,255,132,0.08)]
+            from-[rgba(0,255,132,0.12)]
+            via-[rgba(0,255,132,0.08)]
+            to-[rgba(0,255,132,0.12)]
               dark:from-transparent dark:to-transparent">
               <img
                 src={features[0].image}
@@ -83,9 +83,9 @@ const FeaturesSection = () => {
             <div className="
               p-6 flex items-center justify-center h-56
               bg-gradient-to-b
-            from-[rgba(0,255,132,0.08)]
-            via-[rgba(0,255,132,0.04)]
-            to-[rgba(0,255,132,0.08)]
+            from-[rgba(0,255,132,0.12)]
+            via-[rgba(0,255,132,0.08)]
+            to-[rgba(0,255,132,0.12)]
               dark:from-transparent dark:to-transparent
               ">
               <img
@@ -116,9 +116,9 @@ const FeaturesSection = () => {
             <div className="
               p-6 flex items-center justify-center h-56
               bg-gradient-to-b
-            from-[rgba(0,255,132,0.08)]
-            via-[rgba(0,255,132,0.04)]
-            to-[rgba(0,255,132,0.08)]
+            from-[rgba(0,255,132,0.12)]
+            via-[rgba(0,255,132,0.08)]
+            to-[rgba(0,255,132,0.12)]
               dark:from-transparent dark:to-transparent">
               <img
                 src={features[2].image}
@@ -144,9 +144,9 @@ const FeaturesSection = () => {
           >
             <div className="p-6 flex items-center justify-center h-56
               bg-gradient-to-b
-            from-[rgba(0,255,132,0.08)]
-            via-[rgba(0,255,132,0.04)]
-            to-[rgba(0,255,132,0.08)]
+            from-[rgba(0,255,132,0.12)]
+            via-[rgba(0,255,132,0.08)]
+            to-[rgba(0,255,132,0.12)]
               dark:from-transparent dark:to-transparent">
               <img
                 src={features[3].image}

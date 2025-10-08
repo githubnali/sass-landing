@@ -9,7 +9,7 @@ const Footer = () => {
     smooth: true,
     duration: 1200,
     offset: -100,
-    className: "hover:text-[#00FF84] cursor-pointer",
+    className: "text-gray-700 hover:text-gray-900 cursor-pointer",
   };
 
 
@@ -53,11 +53,11 @@ const Footer = () => {
               Menu Links
             </h3>
             <ul className="space-y-2">
-                      <li><Link to="features" {...scrollProps} className="hover:text-[#00FF84] cursor-pointer">Features</Link></li>
-                      <li><Link to="how-it-works" {...scrollProps} className="hover:text-[#00FF84] cursor-pointer">How it Works</Link></li>
-                      <li><Link to="pricing" {...scrollProps} className="hover:text-[#00FF84] cursor-pointer">Pricing</Link></li>
-                      <li><Link to="reviews" {...scrollProps} className="hover:text-[#00FF84] cursor-pointer">Reviews</Link></li>
-                      <li><Link to="faqs" {...scrollProps} className="hover:text-[#00FF84] cursor-pointer">FAQs</Link></li>
+                      <li><Link to="features" {...scrollProps}>Features</Link></li>
+                      <li><Link to="how-it-works" {...scrollProps}>How it Works</Link></li>
+                      <li><Link to="pricing" {...scrollProps}>Pricing</Link></li>
+                      <li><Link to="reviews" {...scrollProps}>Reviews</Link></li>
+                      <li><Link to="faqs" {...scrollProps}>FAQs</Link></li>
             </ul>
           </div>
 
@@ -67,9 +67,9 @@ const Footer = () => {
               Legal
             </h3>
             <ul className="space-y-2">
-              <li><a className="hover:text-[#00FF84] cursor-pointer">Privacy Policy</a></li>
-              <li><a className="hover:text-[#00FF84] cursor-pointer">Terms of Service</a></li>
-              <li><a className="hover:text-[#00FF84] cursor-pointer">Cookie Policy</a></li>
+              <li><a className="text-gray-700 hover:text-gray-900 cursor-pointer">Privacy Policy</a></li>
+              <li><a className="text-gray-700 hover:text-gray-900 cursor-pointer">Terms of Service</a></li>
+              <li><a className="text-gray-700 hover:text-gray-900 cursor-pointer">Cookie Policy</a></li>
             </ul>
           </div>
 
