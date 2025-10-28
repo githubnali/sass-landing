@@ -2,6 +2,17 @@ import React from "react";
 import { motion } from "framer-motion";
 import { CheckCircle2, ArrowRight } from "lucide-react";
 
+const features = [
+  "Real-time Vendor Connections",
+  "Instant Quotation Requests",
+  "Centralized Project Dashboard",
+  "Automated Contract",
+  "Streamlined Communication",
+  "Cloud-Based Data Accessibility",
+  "Easy Vendor Onboarding",
+];
+
+
 const ComplianceSection = () => {
   return (
     <section
@@ -62,34 +73,19 @@ const ComplianceSection = () => {
           transition={{ duration: 0.6 }}
           className="flex-1 md:w-full flex justify-center md:justify-end"
         >
-          <div className="bg-white dark:bg-gray-800 shadow-md rounded-xl p-6 w-72 md:w-80">
-            <h3 className="text-4xl font-extrabold text-gray-900 dark:text-white mb-4">Security</h3>
-            <ul className="space-y-3 text-gray-700 dark:text-gray-300 text-base">
-                <li className="flex items-center gap-2">
-                    <CheckCircle2 className="text-[#00FF84] w-5 h-5" /> Real-time Vendor Connections
-                </li>
-                <li className="flex items-center gap-2">
-                    <CheckCircle2 className="text-[#00FF84] w-5 h-5" /> Instant Quotation Requests
-                </li>
-                <li className="flex items-center gap-2">
-                    <CheckCircle2 className="text-[#00FF84] w-5 h-5" /> Centralized Project Dashboard
-                </li>
-                <li className="flex items-center gap-2">
-                    <CheckCircle2 className="text-[#00FF84] w-5 h-5" /> Automated Contract
-                </li>
-                <li className="flex items-center gap-2">
-                    <CheckCircle2 className="text-[#00FF84] w-5 h-5" /> Streamlined Communication
-                </li>            
-                <li className="flex items-center gap-2">
-                    <CheckCircle2 className="text-[#00FF84] w-5 h-5" /> Cloud-Based Data Accessibility
-                </li>            
-                <li className="flex items-center gap-2">
-                    <CheckCircle2 className="text-[#00FF84] w-5 h-5" /> Easy Vendor Onboarding
-                </li>            
-                <li className="flex items-center gap-2">
-                    <CheckCircle2 className="text-[#00FF84] w-5 h-5" /> Streamlined Communication
-                </li>            
-            </ul>
+          <div className="bg-white dark:bg-gray-800 shadow-md rounded-xl p-6 w-full">
+            <h3 className="text-4xl font-extrabold text-gray-900 text-center dark:text-white mb-4">SASS Security</h3>
+             <ul className="space-y-3 text-gray-700 dark:text-gray-300 text-base">
+                {features.map((feature, index) => (
+                  <li
+                    key={index}
+                    className="flex items-center gap-2 group transition-transform duration-200 hover:translate-x-1"
+                  >
+                    <CheckCircle2 className="text-[#00FF84] w-5 h-5 transition-transform duration-200 group-hover:scale-110" />
+                    <span className="group-hover:text-white">{feature}</span>
+                  </li>
+                ))}
+              </ul>
           </div>
         </motion.div>
       </div>

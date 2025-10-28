@@ -1,11 +1,10 @@
 // src/components/Navbar.jsx
 import React, { useState, useEffect } from "react";
-import { Moon, Sun, Menu, X } from "lucide-react"; // Added Menu & X for mobile toggle
+import { Moon, Sun, Menu, X } from "lucide-react";
 import { useModal } from "../context/ModalContext";
 import { Link } from "react-scroll";
 
 const Navbar = () => {
-  const [theme, setTheme] = useState("light");
   const [menuOpen, setMenuOpen] = useState(false);
   const [animate, setAnimate] = useState(false);
 
@@ -13,20 +12,10 @@ const Navbar = () => {
 
   // Apply theme on mount
   useEffect(() => {
-    const savedTheme = localStorage.getItem("theme") || "light";
-    setTheme(savedTheme);
-    document.documentElement.classList.toggle("dark", savedTheme === "dark");
+    document.documentElement.classList.add("light");
 
-    // Trigger animation on load
     setTimeout(() => setAnimate(true), 50);
   }, []);
-
-  const toggleTheme = () => {
-    const newTheme = theme === "dark" ? "light" : "dark";
-    setTheme(newTheme);
-    document.documentElement.classList.toggle("dark", newTheme === "dark");
-    localStorage.setItem("theme", newTheme);
-  };
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
@@ -35,7 +24,7 @@ const Navbar = () => {
   const scrollProps = {
     smooth: true,
     duration: 1200,
-    offset: -100, // adjust if you have a sticky header
+    offset: -100,
     className: "hover:text-gray-900 cursor-pointer",
   };
 
@@ -48,12 +37,11 @@ const Navbar = () => {
         from-[rgba(0,255,132,0.04)]
         via-[rgba(0,255,132,0.02)]
         to-[rgba(0,255,132,0.04)]
-        dark:from-transparent dark:to-transparent
 
         ${animate ? "translate-y-0 opacity-100" : "-translate-y-10 opacity-0"}
       `}
     >
-      <nav className="w-full max-w-6xl flex items-center justify-between border-2 border-gray-300 dark:border-gray-700 rounded-full px-6 py-3 bg-white dark:bg-gray-900 font-inter">
+      <nav className="w-full max-w-6xl flex items-center justify-between border-2 border-gray-300 rounded-full px-6 py-3 bg-white font-inter">
         
         {/* Brand Logo */}
         <div className="text-xl font-bold text-gray-900 dark:text-gray-100">
@@ -72,23 +60,20 @@ const Navbar = () => {
 
         {/* Right side */}
         <div className="flex items-center space-x-4">
-          {/* Theme Toggle */}
-          {/* <button
-            onClick={toggleTheme}
-            className="p-2 rounded-md border border-gray-300 dark:border-gray-600 hover:bg-gray-100 dark:hover:bg-gray-800 transition"
-            aria-label="Toggle Theme"
-          >
-            {theme === "dark" ? <Sun size={18} /> : <Moon size={18} />}
-          </button> */}
-
           {/* Get Started Button */}
+          <a
+            onClick={openModal}
+            className="hidden lg:inline px-4 py-2 bg-transparent border-2 border-[#00FF84] text-black dark:text-gray-900 font-semibold rounded-md hover:bg-[#00E676] transition cursor-pointer"
+          >
+            Sign Up
+          </a>
+
           <a
             onClick={openModal}
             className="hidden lg:inline px-4 py-2 bg-[#00FF84] text-black dark:text-gray-900 font-semibold rounded-md hover:bg-[#00E676] transition cursor-pointer"
           >
-            Get Started
+            Sign In
           </a>
-
           {/* Mobile Hamburger Menu */}
           <button
             className="lg:hidden p-2 rounded-md text-gray-800 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800 transition"

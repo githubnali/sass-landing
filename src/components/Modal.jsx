@@ -1,5 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import { useModal } from "../context/ModalContext";
+import { CONTACT_API } from "../utils/constants";
+
 
 const Modal = () => {
   const { isOpen, closeModal } = useModal();
@@ -12,6 +14,12 @@ const Modal = () => {
     phone: "",
     email: "",
     message: "",
+  });
+
+  const [status, setStatus] = useState({
+    loading: false,
+    message: "",
+    error: false,
   });
 
   const [errors, setErrors] = useState({});
@@ -64,19 +72,47 @@ const Modal = () => {
   };
 
   // ✅ Submit
-  const handleSubmit = (e) => {
+  const handleSubmit = async(e) => {
     e.preventDefault();
-    if (validate()) {
-      alert("Form submitted successfully 🎉");
-      closeModal();
-      setFormData({
-        firstName: "",
-        lastName: "",
-        phone: "",
-        email: "",
-        message: "",
-      });
+
+     e.preventDefault();
+
+  setStatus({ loading: true, message: "", error: false });
+
+  try {
+    console.log("Submitting form data:", formData);
+    console.log("API endpoint:", `${CONTACT_API}/api/contact`);
+
+    const res = await fetch(`${CONTACT_API}/api/contact`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(formData),
+    });
+
+    const data = await res.json();
+
+    if (!res.ok) {
+      throw new Error(data.error || "Something went wrong");
     }
+
+    setStatus({ loading: false, message: "Form submitted successfully!", error: false });
+    setFormData({ firstName: "", lastName: "", email: "", phone: "", message: "" });
+  } catch (err) {
+    console.error("Form submission failed:", err);
+    setStatus({ loading: false, message: err.message, error: true });
+  }
+
+  if (validate()) {
+    alert("Form submitted successfully 🎉");
+    closeModal();
+    setFormData({
+      firstName: "",
+      lastName: "",
+      phone: "",
+      email: "",
+      message: "",
+    });
+  }
   };
 
   if (!isOpen) return null;

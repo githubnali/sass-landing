@@ -29,7 +29,7 @@ const ScrollToTopButton = () => {
       {isVisible && (
         <button
           onClick={scrollToTop}
-          className="fixed bottom-6 right-6 p-3 rounded-full bg-[#00FF84] text-black shadow-lg hover:bg-[#00cc66] transition"
+          className="fixed bottom-6 right-6 p-3 rounded-full bg-[#00FF84] text-black shadow-lg hover:bg-[#00cc66] transition z-50"
         >
           <FaArrowUp />
         </button>

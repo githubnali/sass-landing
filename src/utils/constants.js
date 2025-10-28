@@ -1,0 +1,1 @@
+export const CONTACT_API = location.hostname === 'localhost' ? "http://localhost:5000" : "https://sass-backend-0vve.onrender.com"

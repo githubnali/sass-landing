@@ -40,7 +40,7 @@ const FeaturesSection = () => {
           Why Choose Us
         </h2>
 
-        <p class="text-gray-600 mt-2 max-w-2xl mx-auto text-center dark:text-white mb-10">Built to simplify your workflow and accelerate your growth with seamless efficiency.</p>
+        <p className="text-gray-600 mt-2 max-w-2xl mx-auto text-center dark:text-white mb-10">Built to simplify your workflow and accelerate your growth with seamless efficiency.</p>
 
         {/* Row 1 */}
         <div className="flex flex-col md:flex-row gap-6 mb-6">

@@ -62,8 +62,7 @@ const Hero = () => {
           animate={{ y: 0, opacity: 1, filter: "blur(0px)" }}
           transition={{ duration: 1, ease: "easeOut" }}
           className="text-4xl md:text-6xl font-extrabold mb-6 
-                    text-neutral-dark dark:text-white text-center 
-                    bg-clip-text text-transparent drop-shadow-lg 
+                    text-neutral-dark drop-shadow-lg 
                     md:leading-tight font-poppins"
         >
           Streamline
@@ -208,6 +207,7 @@ const Hero = () => {
           </div>
         </motion.div> */}
 
+        {/*trusted my leaders */}
         <div className="py-12 pt-0 dark:bg-gray-900">
            <h2 className="text-center text-lg font-medium text-gray-600 dark:text-gray-300 mb-10 font-poppins">
             Trusted by leading companies

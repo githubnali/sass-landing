@@ -42,9 +42,11 @@ const FAQItem = ({ faq, index, openIndex, setOpenIndex }) => {
     >
       <div className="flex justify-between items-center">
         <h3 className="font-semibold text-lg">{faq.question}</h3>
-        <span className="text-3xl font-bold">{isOpen ? "-" : "+"}</span>
+        <a className="flex justify-center items-center border-2 border-gray-900 px-2 rounded-full w-[35px] h-[35px]">
+          <span className="text-2xl font-bold text-gray-900">{isOpen ? "×" : "+"}</span>
+        </a>      
       </div>
-      {isOpen && <p className="mt-2 text-gray-700 dark:text-gray-300">{faq.answer}</p>}
+      {isOpen && <p className="mt-2 text-gray-700 dark:text-gray-300 w-[80%]">{faq.answer}</p>}
     </div>
   );
 };
